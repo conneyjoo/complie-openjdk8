@@ -1,11 +1,11 @@
 # complie-openjdk8
 complie openjdk8 step
 
------ complie perpare -----
-dev env:
+----- complie openjdk8 perpare -----
 OS: ubuntu 14.04
-java: openjdk8
-support tool: jdk1.7
+support jdk: jdk1.7
+complie support lib:
+sudo apt-get install libx11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev libcups2-dev
 
 
 
