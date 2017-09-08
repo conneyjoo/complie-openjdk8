@@ -17,7 +17,18 @@ create file builld.sh and write complie script
 bash ./configure --with-target-bits=64 --with-boot-jdk=/usr/local/tools/jdk1.7.0_80/ --with-debug-level=slowdebug --enable-debug-symbols ZIP_DEBUGINFO_FILES=0
 make all ZIP_DEBUGINFO_FILES=0 DISABLE_HOTSPOT_OS_VERSION_CHECK=OK #Bash
 ```
-exec ./build.sh start compling...
+exec ./build.sh start compling... 
 ```Bash
 ./build.sh
+```
+
+### step 3 test openjdk8
+new file hello.java
+```Bash
+cd build
+cd linux-x86_64-normal-server-slowdebug
+cd bin
+./javac hello.java
+./java hello
+hello world
 ```
