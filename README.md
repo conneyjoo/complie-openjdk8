@@ -9,22 +9,8 @@ sudo apt-get install libx11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev
 
 ### step 2 complie openjdk8
 create file builld.sh and write complie script
-bash ./configure --with-target-bits=64 --with-boot-jdk=/usr/local/tools/jdk1.7.0_80/ --with-debug-level=slowdebug --enable-debug-symbols ZIP_DEBUGI    NFO_FILES=0
+```Bash
+bash ./configure --with-target-bits=64 --with-boot-jdk=/usr/local/tools/jdk1.7.0_80/ --with-debug-level=slowdebug --enable-debug-     symbols ZIP_DEBUGI    NFO_FILES=0
 make all ZIP_DEBUGINFO_FILES=0 DISABLE_HOTSPOT_OS_VERSION_CHECK=OK #Bash
-
-public class HelloWorld {
-
-      /**
-      * @param args
-	    */
-	    public static void main(String[] args) {
-		    System.out.println("HelloWorld!");
-
-	    }
-
-    }
-
-
-
 
 
