@@ -32,3 +32,9 @@ cd bin
 ./java hello
 hello world
 ```
+
+### step 4 gdb openjdk8
+setting env
+```Bash
+exprot LD_LIBRARY_PATH=/root/workspace/openjdk/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug
+```
