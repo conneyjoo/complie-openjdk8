@@ -2,7 +2,7 @@
 complie openjdk8 step
 
 <h1>step 1</h1>
------ complie openjdk8 perpare -----
+----- complie openjdk8 perpare -----</br>
 OS: ubuntu 14.04</br>
 support jdk: jdk1.7</br>
 complie support lib:</br>
