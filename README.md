@@ -25,9 +25,7 @@ exec ./build.sh start compling...
 ### step 3 test openjdk8
 new file hello.java
 ```Bash
-cd build
-cd linux-x86_64-normal-server-slowdebug
-cd bin
+cd build/linux-x86_64-normal-server-slowdebug/jdk/bin
 ./javac hello.java
 ./java hello
 hello world
@@ -36,5 +34,12 @@ hello world
 ### step 4 gdb openjdk8
 setting env
 ```Bash
-exprot LD_LIBRARY_PATH=/root/workspace/openjdk/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug
+export LD_LIBRARY_PATH=/root/workspace/openjdk/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug
+```
+gdb java
+```Bash
+cd build/linux-x86_64-normal-server-slowdebug/jdk/bin
+gdb --args ./java hello
+b thread.cpp:219
+r
 ```
