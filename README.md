@@ -14,6 +14,7 @@ create file builld.sh and write complie script
 ```Bash
 bash ./configure --with-target-bits=64 --with-boot-jdk=/usr/local/tools/jdk1.7.0_80/ --with-debug-level=slowdebug --enable-debug-     symbols ZIP_DEBUGI    NFO_FILES=0
 make all ZIP_DEBUGINFO_FILES=0 DISABLE_HOTSPOT_OS_VERSION_CHECK=OK #Bash
+```
 
 大标题  
 ===================================  
