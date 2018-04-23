@@ -43,3 +43,9 @@ gdb --args ./java hello
 b thread.cpp:219
 r
 ```
+# complie-openjdk9
+configure parameters
+./configure --with-target-bits=64 --with-debug-level=slowdebug --disable-warnings-as-errors --with-native-debug-symbols=internal --with-boot-jdk=/usr/lib/jvm/java-8-openjdk-amd64
+
+make clean
+make all
