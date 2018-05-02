@@ -44,6 +44,14 @@ b thread.cpp:219
 r
 ```
 # complie-openjdk9
+create .gdbinit file and write follow content on directory /{user}/.gdbinit
+```Bash
+handle SIGSEGV pass noprint nostop
+handle SIGUSR1 pass noprint nostop
+handle SIGUSR2 pass noprint nostop
+r
+```
+
 configure parameters
 ./configure --with-target-bits=64 --with-debug-level=slowdebug --disable-warnings-as-errors --with-native-debug-symbols=internal --with-boot-jdk=/usr/lib/jvm/java-8-openjdk-amd64
 
