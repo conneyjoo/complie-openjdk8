@@ -49,7 +49,6 @@ create .gdbinit file and write follow content on directory /{user}/.gdbinit
 handle SIGSEGV pass noprint nostop
 handle SIGUSR1 pass noprint nostop
 handle SIGUSR2 pass noprint nostop
-r
 ```
 
 configure parameters
